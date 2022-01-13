@@ -73,15 +73,15 @@ extern glob_var global_var;
 /* main.c */
 void check_permissions(char *file_name);
 
-/* strings.c */
+/* strings_length.c */
 int str_length(char *str);
 
-/* processing_file_name.c */
+/* processing_input.c */
 void buffer_cleaner(char *clean_buff, char *buff_temp, ssize_t n_chars);
 int process_input(char *clean_buffer);
 void tokenizer(char *clean_buffer);
 
-/* selector.c */
+/* op_selector.c */
 void (*op_selector(int, stack_t **))(stack_t **, unsigned int);
 
 /* op_functions1.c */
@@ -106,7 +106,7 @@ void op_pstr(stack_t **stack, unsigned int line_number);
 void op_rotl(stack_t **stack, unsigned int line_number);
 
 
-/* stack_operations.c */
+/* stack_length.c */
 int stack_length(stack_t **stack);
 
 #endif /* MONTY_H */
